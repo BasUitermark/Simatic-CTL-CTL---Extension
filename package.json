@@ -1,0 +1,25 @@
+{
+  "name": "ctl",
+  "displayName": "Wincc Ctrl/Ctrl++",
+  "description": "Language support for Wincc OA Simatic Ctrl/Ctrl++",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ctrl",
+      "aliases": ["Ctrl/Ctrl++", "ctrl"],
+      "extensions": [".ctl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ctrl",
+      "scopeName": "source.ctl",
+      "path": "./syntaxes/ctrl.tmLanguage.json"
+    }]
+  }
+}
